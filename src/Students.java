@@ -19,7 +19,13 @@ public String getSurname() {
     public int getId() {
         return id;
     }
-   // public void setName(String newName){
-   //     this.name = newName;
-   // }
+    public void setName(String newName){
+    this.name = newName;
+    }
+    public void setSurname(String newSurname){
+        this.surname = newSurname;
+    }
+    public void setId(int newId){
+        this.id = newId;
+    }
 }
