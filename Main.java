@@ -7,12 +7,6 @@ public class Main {
         System.out.println(studente1.getName());
         System.out.println(studente1.getSurname());
         System.out.println(studente1.getId());
-        studente1.setName("Mario");
-        studente1.setSurname("Rossi");
-        studente1.setId(33);
-        System.out.println(studente1.getName());
-        System.out.println(studente1.getSurname());
-        System.out.println(studente1.getId());
-
+        System.out.println(studente1);
     }
 }

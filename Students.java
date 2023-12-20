@@ -9,7 +9,13 @@ public class Students {
         this.surname = surname;
         this.id = id;
     }
-//Getter-Setter
+
+    @Override
+    public String toString() {
+        return ( name + " "+  surname +" "+ id);
+    }
+
+    //Getter-Setter
 public String getName() {
     return name;
 }
