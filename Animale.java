@@ -1,6 +1,6 @@
-class Gatto extends Animale {
-    @Override
-    void faiIlVerso() {
-        System.out.println("Miagolio del gatto");
+public class Animale {
+    protected String verso = "verso dell'animale";
+    public void faiIlVerso() {
+        System.out.println(this.verso);
     }
 }

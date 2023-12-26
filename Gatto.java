@@ -1,6 +1,7 @@
-class Gatto extends Animale {
-    @Override
-    void faiIlVerso() {
-        System.out.println("Miagolio del gatto");
+public class Gatto extends Animale {
+
+    public void faiIlVerso() {
+        super.verso=("miao");
+        System.out.println(verso);
     }
 }
