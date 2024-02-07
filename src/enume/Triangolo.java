@@ -1,3 +1,6 @@
+package enume;
+
+
 public class Triangolo implements Forma{
 
     private double base;

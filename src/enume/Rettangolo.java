@@ -1,3 +1,5 @@
+package enume;
+
 public class Rettangolo implements Forma{
 
     private double base;
