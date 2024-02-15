@@ -1,4 +1,4 @@
-package hashSet_2;
+package hashSet_3;
 
 import java.util.HashSet;
 
@@ -8,21 +8,26 @@ import java.util.HashSet;
 public class Cars {
 	public String colore;
 	public int ruote;
-	
+
 	public Cars(String colore, int ruote) {
 		super();
 		this.colore = colore;
 		this.ruote = ruote;
 	}
-	public static void riempiCatalogo(HashSet<Cars> catalogo,Cars sample) {
+
+	public static void riempiCatalogo(HashSet<Cars> catalogo, Cars sample) {
 		catalogo.add(sample);
 	}
-	public static void verificaEsistenza(HashSet<Cars> catalogo,Cars entita) {
+
+	public static void verificaEsistenza(HashSet<Cars> catalogo, Cars entita) {
 		if (!catalogo.contains(entita)) {
 			System.out.println("Auto non presente");
+		} else {
+			catalogo.remove(entita);
+			System.out.println("L'auto " + entita + " si ripete");
 
 		}
-	
+
 	}
 
 	@Override
