@@ -1,32 +1,22 @@
 package singleton;
 
-
 public class User {
-    private static User istanza; // istanza unica
     private String nome;
     private int eta;
+    private static User instance = null;
 
-    // Costruttore privato per impedire la creazione di istanze esterne
-    private User(String nome, int eta) {
-        this.nome = nome;
-        this.eta = eta;
+    private User() {
+        this.nome = "Default";
+        this.eta = 0;
     }
 
-    // Metodo statico per ottenere l'istanza unica della classe User
-    public static User getIstanza() {
-        if (istanza == null) {
-        	istanza = new User("Default", 0); // Valori predefiniti per il primo accesso
+    public static User getInstance() {
+        if (instance == null) {
+            instance = new User();
         }
-        return istanza;
+        return instance;
     }
 
-    // Metodo per stampare le informazioni dell'utente
-    public void stampaInformazioni() {
-        System.out.println("Nome: " + nome);
-        System.out.println("Età: " + eta);
-    }
-
-    // Metodi getter e setter
     public String getNome() {
         return nome;
     }
@@ -41,5 +31,10 @@ public class User {
 
     public void setEta(int eta) {
         this.eta = eta;
+    }
+
+    public void stampaInformazioni() {
+        System.out.println("Nome: " + nome);
+        System.out.println("Età: " + eta);
     }
 }
