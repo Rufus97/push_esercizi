@@ -1,19 +1,18 @@
 package enume;
 
 
-public class Triangolo implements Forma{
+class Triangolo extends Forma {
+    double base;
+    double altezza;
 
-    private double base;
-    private double altezza;
-
-    public Triangolo(double base, double altezza){
+    public Triangolo(double base, double altezza) {
+        super(TipoForma.TRIANGOLO);
         this.base = base;
         this.altezza = altezza;
     }
 
-    @java.lang.Override
+    @Override
     public double calcolaArea() {
-        double areaTriangolo = base * altezza /2;
-        return areaTriangolo;
+        return (base * altezza) / 2;
     }
 }

@@ -1,5 +1,12 @@
 package enume;
-public interface Forma {
+abstract class Forma {
+    TipoForma tipoForma;
 
-    public double calcolaArea();
+    // Costruttore
+    public Forma(TipoForma tipoForma) {
+        this.tipoForma = tipoForma;
+    }
+
+    // Metodo astratto per calcolare l'area
+    public abstract double calcolaArea();
 }

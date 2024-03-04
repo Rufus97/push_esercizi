@@ -1,17 +1,17 @@
 package enume;
 
-public class Rettangolo implements Forma{
+class Rettangolo extends Forma {
+    double base;
+    double altezza;
 
-    private double base;
-    private double altezza;
-
-    public Rettangolo(double base, double altezza){
+    public Rettangolo(double base, double altezza) {
+        super(TipoForma.RETTANGOLO);
         this.base = base;
         this.altezza = altezza;
     }
-    @java.lang.Override
+
+    @Override
     public double calcolaArea() {
-        double areaRettangolo = base * altezza;
-        return areaRettangolo;
+        return base * altezza;
     }
 }

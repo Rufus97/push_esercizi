@@ -3,10 +3,11 @@ package enume;
 public class Main {
     public static void main(String[] args) {
 
-        Rettangolo rettangolo1 = new Rettangolo(5,10);
-        Triangolo triangolo1 = new Triangolo(3,3);
+        Triangolo triangolo = new Triangolo(5, 3);
+        System.out.println("Area del triangolo: " + triangolo.calcolaArea());
 
-        System.out.println(rettangolo1.calcolaArea());
-        System.out.println(triangolo1.calcolaArea());
+
+        Rettangolo rettangolo = new Rettangolo(4, 6);
+        System.out.println("Area del rettangolo: " + rettangolo.calcolaArea());
     }
 }
