@@ -1,5 +1,4 @@
-package singleton;
-
+package nullability;
 public class User {
 	  private String name = "John";
 	  private String surname = "Doe";
